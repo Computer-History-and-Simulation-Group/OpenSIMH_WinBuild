@@ -76,3 +76,11 @@ The **..\simh\Windows-Build\PCRE** directory contains the source to PCRE version
 
 #
 
+---
+
+
+- 	Windows-Build Integration project - 12-02-2022 - Steve Cyphers for the OpenSIMH Project
+    -   Windows Build files are now part of the Base repository
+    -   Visual Studio files updated to reflect location changes
+    -   *** REMOVE THIS BEFORE GOING LIVE ***
+  

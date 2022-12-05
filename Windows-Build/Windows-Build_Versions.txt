@@ -17,18 +17,19 @@
 ::     ...\simh\Windows-Build\include\SDL2\SDL.h
 ::     ...\simh\Windows-Build\lib\lib-VC2008\Release\SDL2.lib
 ::
-::	Windows-Build Integration project - 07-15-2022 - SgC
+::	Windows-Build Integration project - 12-03-2022 - SgC
 ::		integrating the Windows build files into the OpenSIMH repository
 ::		corrected directory locations above
 ::		file moved to ..simh\Windows-Build
 ::
-WINDOWS-BUILD           20220119
+WINDOWS-BUILD           20221109
 PACKAGE LIBSDL          2.0.22
 PACKAGE WINPCAP         4.1.2
 PACKAGE PTHREADS        2.11.1
 PACKAGE PCRE            8.45
 PACKAGE LIBPNG          1.6.37
 PACKAGE LIBSDL_TTF      2.0.12
+PACKAGE WINEDITLINE     2.206
 PACKAGE ZLIB            1.2.12
 ::
 :: Local or ultimately upstream included fixes needed by simh
