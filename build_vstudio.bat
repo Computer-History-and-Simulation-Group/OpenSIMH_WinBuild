@@ -22,6 +22,7 @@
 :: Individual simulator executables are produced in .\BIN\NT\Win32-{Debug or Release}\
 ::
 ::
+;;		Update to include Visual Studio 2022	(12/03/2020)	SgC
 
 :: Initialize target variables
 set _BUILD_CONFIG=Release
@@ -50,6 +51,9 @@ set _VC_VER=
 call :FindVCVersion _VC_VER
 if not "%_VC_VER%" == "" goto GotVC
 if exist "%ProgramFiles(x86)%\Microsoft Visual Studio 9.0\VC\vcvarsall.bat" call "%ProgramFiles(x86)%\Microsoft Visual Studio 9.0\VC\vcvarsall.bat" 
+call :FindVCVersion _VC_VER
+if not "%_VC_VER%" == "" goto GotVC
+if exist "%ProgramFiles%\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars32.bat" call "%ProgramFiles%\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars32.bat"
 call :FindVCVersion _VC_VER
 if not "%_VC_VER%" == "" goto GotVC
 if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars32.bat" call "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvars32.bat"
