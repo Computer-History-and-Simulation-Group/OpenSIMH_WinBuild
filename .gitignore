@@ -1,13 +1,15 @@
 .git-commit-id
+
 #ignore thumbnails created by windows
 Thumbs.db
+
 #ignore Desktop Services Store created by OSX
 .DS_Store
-#Ignore files built by Visual Studio
-*.obj
-*.exe
+
 # VAX/vmb.exe is not a generated file and should be in the repository
 !VAX/vmb.exe
+
+#
 *.pdb
 *.user
 *.aps
@@ -17,19 +19,23 @@ Thumbs.db
 *_p.c
 *.ncb
 *.suo
+*.sdf
+*.VC.opendb
+*.VC.db
+.vs/
+*.opensdf
 *.tlb
 *.tlh
 *.bak
 *.cache
 *.ilk
 *.log
-[Bb]in
-[Dd]ebug*/
-*.lib
 *.sbr
 *.bak
 *.save
 obj/
+[Bb]in
+[Dd]ebug*/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
@@ -38,12 +44,56 @@ _ReSharper*/
 *#
 BIN/
 ipch/
-# We only care about specific files in the Visual Studio Projects 
-# folder.  Things which are there on the fly to support debugging 
+
+**/*.code-workspace
+**/.vscode/
+
+# PCRE Intermedia Files
+testout8/
+testoutstudy8/
+pcre_chartables.c
+testsaved*
+
+#
+# Ignore object and executable files built by Visual Studio
+*.obj
+*.exe
+
 # or other things we don't want git to manage.
 Visual Studio Projects/*
 !Visual Studio Projects/*.vcproj
 !Visual Studio Projects/*.sln
 !Visual Studio Projects/0ReadMe_Projects.txt
-**/*.code-workspace
-**/.vscode/
+!Visual Studio Projects/*.md
+!Visual Studio Projects/__Updated_for_Windows-Build_integration__.txt
+
+# Need to include all files in Windows-Build directories, incl lib. Release and Debug
+!Windows-Build/*
+!Windows-Build/include/*
+!Windows-Build/include/pcap/*
+!Windows-Build/include/*/SDL2
+!Windows-Build/include/*/SDL2_ttf
+!Windows-Build/lib/*
+!Windows-Build/lib/lib-VC2008/*
+!Windows-Build/lib/lib-VC2010/*
+!Windows-Build/lib/lib-VC2012/*
+!Windows-Build/lib/lib-VC2015/*
+!Windows-Build/lib/lib-VC2017/*
+!Windows-Build/lib/lib-VC2019/*
+!Windows-Build/lib/lib-VC2022/*
+!Windows-Build/lib/lib-VC2008/Debug/*
+!Windows-Build/lib/lib-VC2008/Release/*
+!Windows-Build/lib/lib-VC2010/Debug/*
+!Windows-Build/lib/lib-VC2010/Release/*
+!Windows-Build/lib/lib-VC2012/Debug/*
+!Windows-Build/lib/lib-VC2012/Release/*
+!Windows-Build/lib/lib-VC2015/Debug/*
+!Windows-Build/lib/lib-VC2015/Release/*
+!Windows-Build/lib/lib-VC2017/Debug/*
+!Windows-Build/lib/lib-VC2017/Release/*
+!Windows-Build/lib/lib-VC2019/Debug/*
+!Windows-Build/lib/lib-VC2019/Release/*
+!Windows-Build/lib/lib-VC2022/Debug/*
+!Windows-Build/lib/lib-VC2022/Release/*
+!Windows-Build/libSDL2/*
+#
