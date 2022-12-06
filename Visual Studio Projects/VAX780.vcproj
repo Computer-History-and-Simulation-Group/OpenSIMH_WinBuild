@@ -40,7 +40,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="../VAX/;../pdp11/;./;../;../slirp;../slirp_glue;../slirp_glue/qemu;../slirp_glue/qemu/win32/include;../../windows-build/include;;../../windows-build/include/SDL2"
+				AdditionalIncludeDirectories="..\VAX\;..\pdp11\;.\;..\;..\slirp;..\slirp_glue;..\slirp_glue\qemu;..\slirp_glue\qemu\win32\include;..\Windows-Build\include;;..\Windows-Build\include\SDL2"
 				PreprocessorDefinitions="USE_INT64;USE_ADDR64;VM_VAX;VAX_780;USE_SHARED;SIM_BUILD_TOOL=simh-Visual-Studio-Project;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;PTW32_STATIC_LIB;USE_READER_THREAD;SIM_ASYNCH_IO;SIM_NEED_GIT_COMMIT_ID;HAVE_PCRE_H;PCRE_STATIC;HAVE_SLIRP_NETWORK;USE_SIMH_SLIRP_DEBUG"
 				BasicRuntimeChecks="0"
 				RuntimeLibrary="1"
@@ -65,7 +65,7 @@
 				AdditionalOptions="/fixed:no"
 				AdditionalDependencies="libcmtd.lib wsock32.lib winmm.lib Iphlpapi.lib pcrestaticd.lib SDL2-StaticD.lib SDL2_ttf-StaticD.lib freetype2412MT_D.lib libpng16.lib zlib.lib dxguid.lib Imm32.lib Version.lib Setupapi.lib"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="../../windows-build/lib/Debug/"
+				AdditionalLibraryDirectories="..\Windows-Build\lib\Debug\"
 				GenerateDebugInformation="true"
 				SubSystem="1"
 				StackReserveSize="10485760"
@@ -127,7 +127,7 @@
 				FavorSizeOrSpeed="1"
 				OmitFramePointers="true"
 				WholeProgramOptimization="true"
-				AdditionalIncludeDirectories="../VAX/;../pdp11/;./;../;../slirp;../slirp_glue;../slirp_glue/qemu;../slirp_glue/qemu/win32/include;../../windows-build/include;;../../windows-build/include/SDL2"
+				AdditionalIncludeDirectories="..\VAX\;..\pdp11\;.\;..\;..\slirp;..\slirp_glue;..\slirp_glue\qemu;..\slirp_glue\qemu\win32\include;..\Windows-Build\include;;..\Windows-Build\include\SDL2"
 				PreprocessorDefinitions="USE_INT64;USE_ADDR64;VM_VAX;VAX_780;USE_SHARED;SIM_BUILD_TOOL=simh-Visual-Studio-Project;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;PTW32_STATIC_LIB;USE_READER_THREAD;SIM_ASYNCH_IO;SIM_NEED_GIT_COMMIT_ID;HAVE_PCRE_H;PCRE_STATIC;HAVE_SLIRP_NETWORK;USE_SIMH_SLIRP_DEBUG"
 				StringPooling="true"
 				RuntimeLibrary="0"
@@ -152,7 +152,7 @@
 				AdditionalOptions="/fixed:no"
 				AdditionalDependencies="libcmt.lib wsock32.lib winmm.lib Iphlpapi.lib pcrestatic.lib SDL2-Static.lib SDL2_ttf-Static.lib freetype2412MT.lib libpng16.lib zlib.lib dxguid.lib Imm32.lib Version.lib Setupapi.lib"
 				LinkIncremental="1"
-				AdditionalLibraryDirectories="../../windows-build/lib/Release/"
+				AdditionalLibraryDirectories="..\Windows-Build\lib\Release\"
 				GenerateDebugInformation="false"
 				SubSystem="1"
 				StackReserveSize="10485760"
@@ -281,7 +281,7 @@
 				>
 			</File>
 			<File
-				RelativePath="..\..\windows-build\pthreads\pthread.c"
+				RelativePath="..\Windows-Build\pthreads\pthread.c"
 				>
 				<FileConfiguration
 					Name="Debug|Win32"
