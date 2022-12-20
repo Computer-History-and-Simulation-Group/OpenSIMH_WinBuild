@@ -105,7 +105,7 @@ rem any meaning, it always gets set.
   call :FindVCVersion _VC_VER
   
   set _X_WINDOWS_BUILD=
-  for /F "usebackq tokens=2" %%i in (`findstr /C:"WINDOWS-BUILD" \..\Windows-Build\Windows-Build_Versions.txt`) do SET _X_WINDOWS_BUILD=%%i
+  for /F "usebackq tokens=2" %%i in (`findstr /C:"WINDOWS-BUILD" ..\Windows-Build\Windows-Build_Versions.txt`) do SET _X_WINDOWS_BUILD=%%i
   set _X_LAST_WINDOWS_BUILD=
   if exist Pre-Build-Event.last-windows-build-version.txt for /F "usebackq tokens=2" %%i in (`findstr /C:"WINDOWS-BUILD" Pre-Build-Event.last-windows-build-version.txt`) do SET _X_LAST_WINDOWS_BUILD=%%i
   if "%_X_WINDOWS_BUILD%" EQU "%_X_LAST_WINDOWS_BUILD%" goto _new_or_same_windows_build
@@ -114,7 +114,7 @@ rem any meaning, it always gets set.
   if exist ..\Windows-Build\lib\Debug   rmdir/s/q ..\Windows-Build\lib\Debug
   if exist ..\Windows-Build\lib\Release rmdir/s/q ..\Windows-Build\lib\Release
   if exist ..\Windows-Build\lib\VisualCVersionSupport.txt del ..\Windows-Build\lib\VisualCVersionSupport.txt
-  echo "Windows-Build           %_X_WINDOWS_BUILD%" > Pre-Build-Event.last-Windows-Build-version.txt
+  echo "WINDOWS-BUILD           %_X_WINDOWS_BUILD%" > Pre-Build-Event.last-Windows-Build-version.txt
 
 :_new_or_same_windows_build
 
